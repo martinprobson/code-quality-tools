@@ -4,9 +4,6 @@
 This [plugin](https://maven.apache.org/plugins/maven-checkstyle-plugin/index.html) checks Java code formatting against conventions. 
 In this case the plugin has been configured to check against modified [Google's coding conventions](https://google.github.io/styleguide/javaguide.html). 
 
-There is some dodgy code in the test directory of this repo (spring-data-jpa branch), so to see this plugin in action, change 
-`<includeTestSourceDirectory>` to true in the `pom.xml`, so that the test classes get checked as well: -
-
 ```xml
 <configuration>
     <configLocation>checkstye-checks.xml</configLocation>   <!-- Use modified google code checks -->
@@ -23,7 +20,8 @@ There is some dodgy code in the test directory of this repo (spring-data-jpa bra
 
 Reload the maven config in IntelliJ and run `mvn checkstyle:check`
 
-There is an [IntelliJ plugin](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea) you can install, that can check your code in the same way within IntelliJ itself
+There is an [IntelliJ plugin](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea) you can install, 
+that can check your code in the same way within IntelliJ itself
 
 
 ## SpotBugs

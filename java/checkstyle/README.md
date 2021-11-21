@@ -6,7 +6,8 @@ In this case the plugin has been configured to check against modified [Google's 
 
 ```xml
 <configuration>
-    <configLocation>checkstye-checks.xml</configLocation>   <!-- Use modified google code checks -->
+    <!-- Use modifed google code checks -->
+    <configLocation>https://raw.githubusercontent.com/martinprobson/code-quality-tools/main/java/checkstyle/checkstyle-checks.xml</configLocation> 
     <includeTestSourceDirectory>true</includeTestSourceDirectory> <!-- Include test sources -->
     <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
     <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
